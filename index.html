@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas Circulares</title>
+</head>
+<body>
+    <center>
+        <h1>Ruta de transporte</h1>
+    </center>
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <form id="form_1">
+                        <h3>Agregar ruta</h3>
+                        <input type="text" id="nombre" placeholder="Nombre ruta"/>
+                        <p></p>
+                        <input type="number" id="minutos" placeholder="Minutos"/>
+                        <p></p>
+                        <input type="number" id="posicion" placeholder="Posición (Opcional)"/>
+                        <p></p>
+                        <input type="button" value="Agregar" id="btAgregar"/>
+                        <p></p>
+                        <h3>Buscar ruta</h3>
+                        <input type="text" id="buscar" placeholder="Nombre ruta"/>
+                        <input type="button" value="Buscar" id="btBuscar"/>
+                        <p></p>
+                        <h3>Borrar ruta</h3>
+                        <input type="text" id="borrar" placeholder="Nombre ruta"/>
+                        <input type="button" value="Borrar" id="btBorrar"/>
+                        <p></p>
+                        <h3>Listar rutas</h3>
+                        <input type="button" value="Listar" id="btListar"/>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form id="form_2">
+                        <h3>Recorrido</h3>
+                        <input type="text" id="nombreR" placeholder="Nombre ruta"/>
+                        <p></p>
+                        <input type="number" id="horaIn" placeholder="Hora inicial">
+                        <p></p>
+                        <input type="number" id="horaFin" placeholder="Hora final">
+                        <p></p>
+                        <input type="button" value="Iniciar" id="btIniciar"/>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <h3>Inventario</h3>
+                    <ul id="listado" class="list-group"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- JS -->
+    <script src="main.js"></script>
+</body>
+</html>
