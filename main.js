@@ -22,7 +22,7 @@ class Rutas{
         this.minutos = minutos;
         this.siguiente = null;
     }
-    articleToHtml(){
+    creadorTabla(){
         let productString = '<li class="list-group-item">';
         for(let key in this){
             productString += `<div><strong>${key}:</strong> ${this[key]}</div>`;
@@ -139,7 +139,7 @@ class Central{
         let aux = this.inicio;
         let temp = false;
         while(!temp){
-            lista.innerHTML += aux.articleToHtml();
+            lista.innerHTML += aux.creadorTabla();
             aux = aux.siguiente;
             if(aux.nombre === this.inicio.nombre){
                 temp = true;
@@ -186,7 +186,7 @@ btAgregar.addEventListener("click", () => {
 btBuscar.addEventListener("click", () => {
     lista.innerHTML = "";
     let x = central.buscar(buscar.value);
-    lista.innerHTML += x.articleToHtml();
+    lista.innerHTML += x.creadorTabla();
     document.getElementById("form_1").reset();
 });
 
